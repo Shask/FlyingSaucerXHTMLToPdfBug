@@ -22,7 +22,7 @@ Image not centered
 
 ### Itext 7
 
-Image centered but no free for commercial use.
+Image centered but not free for commercial use.
 
 ### Dirty Dirty Fix
 
