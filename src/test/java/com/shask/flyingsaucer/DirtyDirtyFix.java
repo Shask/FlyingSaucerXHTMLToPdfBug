@@ -1,6 +1,6 @@
 package com.shask.flyingsaucer;
 
-import com.itextpdf.text.DocumentException;
+import com.lowagie.text.DocumentException;
 import org.htmlcleaner.HtmlCleaner;
 import org.htmlcleaner.SimpleXmlSerializer;
 import org.htmlcleaner.TagNode;
@@ -30,7 +30,7 @@ public class DirtyDirtyFix {
         ITextRenderer renderer = new ITextRenderer();
         renderer.setDocumentFromString(htmlContent);
         renderer.layout();
-        try (FileOutputStream os = new FileOutputStream("dirty_fix.pdf")) {
+        try (FileOutputStream os = new FileOutputStream("result_dirty_fix.pdf")) {
             renderer.createPDF(os);
         } catch (DocumentException e) {
             throw new IOException("Cannot create pdf", e);
